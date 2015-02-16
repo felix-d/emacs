@@ -1,0 +1,1 @@
+("~/.zprezto/" "~/Documents/social_commerce_project/")

@@ -1,0 +1,19 @@
+(eval-after-load 'flycheck    '(setq flycheck-checkers (delq 'emacs-lisp-checkdoc flycheck-checkers)))  (add-hook 'prog-mode-hook 'flycheck-mode)
+clear
+ls
+ls
+cd
+cd Documents/
+cd social_commerce_project/
+gulp
+ls
+gulp
+cd
+cd Documents/social_commerce_project/
+ls
+gulp
+bower install react
+ls
+ls
+workon hec
+vi
