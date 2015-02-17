@@ -1,1 +1,1 @@
-("~/.zprezto/" "~/Documents/social_commerce_project/")
+("~/.emacs.d/" "~/.emacs.d/el-get/find-file-in-project/" "~/.emacs.d/el-get/s/" "~/Downloads/react-tutorial-master 3/" "~/Downloads/react-tutorial-master/" "~/Documents/social_commerce_project/" "~/.zprezto/")

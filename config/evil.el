@@ -22,3 +22,22 @@
 ;; Evil nerd commenter default keys
 ;; M-; for lines
 (evilnc-default-hotkeys)
+
+(add-to-list 'evil-emacs-state-modes 'eshell-mode)
+(add-hook 'eshell-mode-hook 'turn-off-evil-mode)
+
+;; eshell mode
+(defun eshell-evil-keys ()
+  (define-key eshell-mode-map (kbd "C-w =") 'balance-windows)
+  (define-key eshell-mode-map (kbd "C-w h") 'windmove-left)
+  (define-key eshell-mode-map (kbd "C-w C-h") 'windmove-left)
+  (define-key eshell-mode-map (kbd "C-w l") 'windmove-right)
+  (define-key eshell-mode-map (kbd "C-w C-l") 'windmove-right)
+  (define-key eshell-mode-map (kbd "C-w j") 'windmove-down)
+  (define-key eshell-mode-map (kbd "C-w C-j") 'windmove-down)
+  (define-key eshell-mode-map (kbd "C-w C-k") 'windmove-up)
+  (define-key eshell-mode-map (kbd "C-w k") 'windmove-up)
+  (define-key eshell-mode-map (kbd "C-w c") 'delete-window)
+  (define-key eshell-mode-map (kbd "C-d") 'bury-buffer))
+
+(add-hook 'eshell-mode-hook 'eshell-evil-keys)
