@@ -4,5 +4,6 @@
 (setenv "FACEBOOK_APP_ID" "1586828871554467")
 (setenv "FACEBOOK_APP_SECRET" "14fbd82695c09f4ddc965baf2581e4b8")
 (setenv "TMDB_API_KEY" "96e4de8a6ca6ce8b55ef9ae06dde27b1")
+(global-set-key (kbd "<f1>") 'eshell)
 (setq eshell-cmpl-ignore-case t)
 
