@@ -63,3 +63,4 @@
 
 ;; old enough for y or no questions
  (defalias 'yes-or-no-p 'y-or-n-p)
+

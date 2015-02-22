@@ -1,4 +1,4 @@
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin:/Applications/MAMP/Library/bin:"))
 (setq exec-path (append exec-path '("/usr/local/bin")))
 (setenv "SOCIAL_COMMERCE_SECRET_KEY" "yr4-a%&75^0)86cf&rv4b32y%4!wrmxhbxms94cj%slh9azbl^")
 (setenv "FACEBOOK_APP_ID" "1586828871554467")
@@ -7,3 +7,5 @@
 (global-set-key (kbd "<f1>") 'eshell)
 (setq eshell-cmpl-ignore-case t)
 
+(defalias 'open 'find-file)
+(defalias 'openo 'find-file-other-window)

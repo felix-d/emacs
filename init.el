@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
@@ -45,7 +46,9 @@
          virtualenvwrapper
          web-mode
          paredit
-         yasnippet)  
+         yasnippet
+         yasnippet-snippets
+         emmet-mode)  
        (mapcar 'el-get-as-symbol
                (mapcar 'el-get-source-name el-get-sources))))
 
@@ -79,12 +82,22 @@
     (global-flycheck-mode +1)
   (add-hook 'prog-mode-hook 'flycheck-mode))
 
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+(add-hook 'web-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+
+(require 'yasnippet)
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"
+        "~/.emacs.d/el-get/yasnippet-snippets/" ;; personal snippets
+        ))
+(yas-global-mode 1)
+
 ;; Projectile settings
 (projectile-global-mode)
 (setq projectile-enable-caching t)
 (setq inhibit-startup-message t)   
 (elpy-enable)
-
 (require 'virtualenvwrapper)
 (venv-initialize-eshell) ;; if you want eshell support
 (setq venv-location "~/Envs")
@@ -93,4 +106,3 @@
 (setq web-mode-enable-auto-closing t)
 (setq web-mode-enable-auto-pairing t)
 (setq web-mode-enable-auto-quoting nil)
-
