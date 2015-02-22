@@ -16,36 +16,24 @@
 (setq my-el-get-packages  
       (append  
        '(auto-complete
-         cl-lib
-         company-mode
-         dash elpy epl
+         elpy
          evil
          evil-leader
          evil-matchit
          evil-nerd-commenter
          evil-surround
-         f
-         find-file-in-project
          flycheck
-         fuzzy
-         goto-chg
          helm
-         highlight-indentation
-         idomenu
          js2-mode
          key-chord
-         let-alist
          linum-relative
          monokai-theme
-         pkg-info popup
+         pkg-info
+         popup
          projectile
-         pyvenv
-         s
          tern
-         undo-tree
          virtualenvwrapper
          web-mode
-         paredit
          yasnippet
          yasnippet-snippets
          emmet-mode)  
