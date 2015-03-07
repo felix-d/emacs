@@ -23,8 +23,6 @@
 ;; M-; for lines
 (evilnc-default-hotkeys)
 
-(add-to-list 'evil-emacs-state-modes 'eshell-mode)
-(add-hook 'eshell-mode-hook 'turn-off-evil-mode)
 
 ;; eshell mode
 (defun eshell-evil-keys ()

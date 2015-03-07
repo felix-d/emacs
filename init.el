@@ -57,6 +57,7 @@
 (load-file "~/.emacs.d/config/evil.el")
 (load-file "~/.emacs.d/config/gui-conf.el")
 (load-file "~/.emacs.d/config/basic-conf.el")
+(load-file "~/.emacs.d/config/yas-conf.el")
 (load-file "~/.emacs.d/config/autocomplete.el")
 (load-file "~/.emacs.d/config/osx.el")
 (load-file "~/.emacs.d/config/helm-conf.el")
@@ -73,36 +74,6 @@
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (add-hook 'web-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 
-(require 'yasnippet)
-(setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"
-        "~/.emacs.d/el-get/yasnippet-snippets/" ;; personal snippets
-        ))
-(eval-after-load 'popup
-  '(progn
-     (define-key popup-menu-keymap (kbd "M-n") 'popup-next)
-     (define-key popup-menu-keymap (kbd "TAB") 'popup-next)
-     (define-key popup-menu-keymap (kbd "<tab>") 'popup-next)
-     (define-key popup-menu-keymap (kbd "<backtab>") 'popup-previous)
-     (define-key popup-menu-keymap (kbd "M-p") 'popup-previous)))
-(defun yas-popup-isearch-prompt (prompt choices &optional display-fn)
-  (when (featurep 'popup)
-    (popup-menu*
-     (mapcar
-      (lambda (choice)
-        (popup-make-item
-         (or (and display-fn (funcall display-fn choice))
-             choice)
-         :value choice))
-      choices)
-     :prompt prompt
-     ;; start isearch mode immediately
-     :isearch t)))
-(setq yas-prompt-functions
-        '(yas-popup-isearch-prompt
-          yas-no-prompt))
-(yas-global-mode 1)
-
 
 ;; Projectile settings
 (projectile-global-mode)
@@ -112,8 +83,18 @@
 (require 'virtualenvwrapper)
 (venv-initialize-eshell) ;; if you want eshell support
 (setq venv-location "~/Envs")
+(setq sp-autoescape-string-quote nil)
+(electric-pair-mode t)
+;; (smartparens-global-mode t)
+;; (sp-local-pair 'web-mode "{" nil :actions nil)
+;; (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
 
-
-(setq web-mode-enable-auto-closing t)
-(setq web-mode-enable-auto-pairing t)
+;; (setq web-mode-enable-auto-closing t)
+;; (setq web-mode-enable-auto-pairing t)
 (setq web-mode-enable-auto-quoting nil)
+(setq web-mode-enable-auto-pairing nil) 
+
+(add-to-list 'evil-emacs-state-modes 'eshell-mode)
+(add-hook 'eshell-mode-hook 'turn-off-evil-mode)
+
+;; We add new pair for web mode (for djhtml)

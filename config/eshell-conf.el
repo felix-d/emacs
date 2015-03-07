@@ -7,5 +7,5 @@
 (global-set-key (kbd "<f1>") 'eshell)
 (setq eshell-cmpl-ignore-case t)
 
-(defalias 'open 'find-file)
-(defalias 'openo 'find-file-other-window)
+(defalias 'openf 'find-file)
+(defalias 'openfo 'find-file-other-window)

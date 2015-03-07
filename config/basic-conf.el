@@ -5,7 +5,6 @@
 ;; we indent with spaces!
 (setq-default indent-tabs-mode nil)
 
-(electric-pair-mode 1)
 ;; better defaults
 (setq x-select-enable-clipboard t
       x-select-enable-primary t
