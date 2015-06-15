@@ -1,9 +1,0 @@
-*.dat
-auto-save-list/
-backups/
-el-get/
-projectile-bookmars.eld
-*.elc
-*~
-#*
-*#
