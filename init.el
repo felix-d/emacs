@@ -15,7 +15,6 @@
 (setq my-el-get-packages  
       (append  
        '(auto-complete
-         elpy
          evil
          evil-leader
          evil-matchit
@@ -26,7 +25,6 @@
          js2-mode
          key-chord
          linum-relative
-         monokai-theme
          pkg-info
          popup
          projectile
@@ -39,10 +37,8 @@
        (mapcar 'el-get-as-symbol
                (mapcar 'el-get-source-name el-get-sources))))
 
-
 ;; We sync all the packages!!!
 (el-get 'sync my-el-get-packages)
-
 
 ;;remove menus
 (menu-bar-mode -1)
@@ -51,15 +47,12 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
-
-
 ;; we load some configs
 (load-file "~/.emacs.d/config/evil.el")
 (load-file "~/.emacs.d/config/gui-conf.el")
 (load-file "~/.emacs.d/config/basic-conf.el")
 (load-file "~/.emacs.d/config/yas-conf.el")
 (load-file "~/.emacs.d/config/autocomplete.el")
-(load-file "~/.emacs.d/config/osx.el")
 (load-file "~/.emacs.d/config/helm-conf.el")
 (load-file "~/.emacs.d/config/js-conf.el")
 (load-file "~/.emacs.d/config/eshell-conf.el")
@@ -74,27 +67,18 @@
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (add-hook 'web-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 
-
 ;; Projectile settings
 (projectile-global-mode)
 (setq projectile-enable-caching t)
 (setq inhibit-startup-message t)   
-(elpy-enable)
-(require 'virtualenvwrapper)
-(venv-initialize-eshell) ;; if you want eshell support
-(setq venv-location "~/Envs")
 (setq sp-autoescape-string-quote nil)
 (electric-pair-mode t)
-;; (smartparens-global-mode t)
-;; (sp-local-pair 'web-mode "{" nil :actions nil)
-;; (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
 
-;; (setq web-mode-enable-auto-closing t)
-;; (setq web-mode-enable-auto-pairing t)
+;; Web mode settings
 (setq web-mode-enable-auto-quoting nil)
 (setq web-mode-enable-auto-pairing nil) 
 
-(add-to-list 'evil-emacs-state-modes 'eshell-mode)
-(add-hook 'eshell-mode-hook 'turn-off-evil-mode)
 
-;; We add new pair for web mode (for djhtml)
+(add-to-list 'evil-emacs-state-modes 'term-mode)
+(add-hook 'term-mode-hook 'turn-off-evil-mode)
+
