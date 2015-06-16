@@ -55,7 +55,6 @@
 (load-file "~/.emacs.d/config/autocomplete.el")
 (load-file "~/.emacs.d/config/helm-conf.el")
 (load-file "~/.emacs.d/config/js-conf.el")
-(load-file "~/.emacs.d/config/eshell-conf.el")
 (load-file "~/.emacs.d/config/web-conf.el")
 
 ;; enable on-the-fly syntax checking
@@ -66,7 +65,6 @@
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (add-hook 'web-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
-
 ;; Projectile settings
 (projectile-global-mode)
 (setq projectile-enable-caching t)
@@ -77,8 +75,3 @@
 ;; Web mode settings
 (setq web-mode-enable-auto-quoting nil)
 (setq web-mode-enable-auto-pairing nil) 
-
-
-(add-to-list 'evil-emacs-state-modes 'term-mode)
-(add-hook 'term-mode-hook 'turn-off-evil-mode)
-

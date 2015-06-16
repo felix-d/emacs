@@ -6,6 +6,13 @@
 (require 'evil-matchit)
 
 (evil-mode 1)
+
+(mapc
+ (lambda (mode-hook)
+   (add-hook mode-hook 'turn-off-evil-mode))
+ '(info-mode-hook
+   eshell-mode-hook))
+
 (key-chord-mode 1)
 (global-evil-surround-mode 1)
 (global-evil-leader-mode)
@@ -22,7 +29,6 @@
 ;; Evil nerd commenter default keys
 ;; M-; for lines
 (evilnc-default-hotkeys)
-
 
 ;; eshell mode
 (defun eshell-evil-keys ()
