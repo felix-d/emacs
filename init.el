@@ -58,7 +58,7 @@
 (load-file "~/.emacs.d/config/basic-conf.el")
 (load-file "~/.emacs.d/config/projectile-conf.el")
 (load-file "~/.emacs.d/config/yas-conf.el")
-(load-file "~/.emacs.d/config/autocomplete.el")
+;; (load-file "~/.emacs.d/config/autocomplete.el")
 (load-file "~/.emacs.d/config/helm-conf.el")
 (load-file "~/.emacs.d/config/js-conf.el")
 (load-file "~/.emacs.d/config/web-conf.el")
