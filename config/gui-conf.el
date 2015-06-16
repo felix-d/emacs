@@ -8,6 +8,13 @@
             (lambda ()
               (linum-mode 1))))
 
+;;remove menus
+(menu-bar-mode -1)
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode -1))
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode -1))
+
 ;; show parenthesis match
 (setq show-paren-style 'expression)
 

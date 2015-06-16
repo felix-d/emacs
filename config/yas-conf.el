@@ -27,3 +27,5 @@
         '(yas-popup-isearch-prompt
           yas-no-prompt))
 (yas-global-mode)
+(add-hook 'term-mode-hook (lambda()
+                (yas-minor-mode -1)))
