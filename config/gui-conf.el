@@ -17,8 +17,8 @@
 ;;global highlight
 (global-hl-line-mode t)
 
-(if (member "Monaco" (font-family-list))
+(if (member "Andale" (font-family-list))
     (set-face-attribute
-     'default nil :font "Monaco 13"))
+     'default nil :font "Andale 13"))
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'monokai t)

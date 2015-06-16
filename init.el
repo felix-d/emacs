@@ -19,9 +19,11 @@
          evil-leader
          evil-matchit
          evil-nerd-commenter
+         multi-term
          evil-surround
          flycheck
          helm
+         window-numbering
          js2-mode
          key-chord
          linum-relative
@@ -75,3 +77,22 @@
 ;; Web mode settings
 (setq web-mode-enable-auto-quoting nil)
 (setq web-mode-enable-auto-pairing nil) 
+
+;; Fix for issue with apt-get from eshell
+(setq projectile-mode-line " Projectile")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(term-unbind-key-list (quote ("C-z" "C-x" "C-c" "C-h" "C-y" "<ESC>" "C-w"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custo.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(add-hook 'term-mode-hook (lambda()
+                (yas-minor-mode -1)))
+(window-numbering-mode)
