@@ -32,6 +32,7 @@
          evil-surround
          flycheck
          helm
+         smartparens
          window-numbering
          js2-mode
          key-chord
@@ -41,6 +42,7 @@
          projectile
          tern
          virtualenvwrapper
+         company-mode
          web-mode
          yasnippet
          yasnippet-snippets
@@ -52,25 +54,14 @@
 (el-get 'sync my-el-get-packages)
 
 ;; We load some configs
-(load-file "~/.emacs.d/config/evil.el")
-(load-file "~/.emacs.d/config/gui-conf.el")
-(load-file "~/.emacs.d/config/basic-conf.el")
-(load-file "~/.emacs.d/config/projectile-conf.el")
-(load-file "~/.emacs.d/config/yas-conf.el")
-(load-file "~/.emacs.d/config/autocomplete.el")
-(load-file "~/.emacs.d/config/helm-conf.el")
-(load-file "~/.emacs.d/config/js-conf.el")
-(load-file "~/.emacs.d/config/web-conf.el")
-
-;; Enable on-the-fly syntax checking
-(if (fboundp 'global-flycheck-mode)
-    (global-flycheck-mode +1)
-  (add-hook 'prog-mode-hook 'flycheck-mode))
-
-;; Emmet mode met let you easily create HTML
-(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
-(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
-(add-hook 'web-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
-
-;; Lets you switch between windows with M-1, M-2, M-...
-(window-numbering-mode)
+(load-file "~/.emacs.d/config/setup-evil.el")
+(load-file "~/.emacs.d/config/setup-gui.el")
+(load-file "~/.emacs.d/config/setup-basic.el")
+(load-file "~/.emacs.d/config/setup-projectile.el")
+(load-file "~/.emacs.d/config/setup-yas.el")
+(load-file "~/.emacs.d/config/setup-helm.el")
+(load-file "~/.emacs.d/config/setup-js.el")
+(load-file "~/.emacs.d/config/setup-web.el")
+(load-file "~/.emacs.d/config/setup-smartparens.el")
+(load-file "~/.emacs.d/config/setup-flycheck.el")
+(load-file "~/.emacs.d/config/setup-company.el")
