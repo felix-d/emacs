@@ -24,3 +24,5 @@
               ;; enable flycheck
               (flycheck-select-checker 'jsxhint-checker)
               (flycheck-mode))))
+
+(setq js2-highlight-level 3)

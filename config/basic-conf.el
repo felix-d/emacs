@@ -5,6 +5,8 @@
 ;; we indent with spaces!
 (setq-default indent-tabs-mode nil)
 
+(electric-indent-mode t)
+(setq js2-highlight-level 3)
 ;; better defaults
 (setq x-select-enable-clipboard t
       x-select-enable-primary t
