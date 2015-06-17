@@ -1,15 +1,9 @@
-;; Open .js file with js2-mode
-(add-to-list 'auto-mode-alist '("\\.js\\'"    . js2-mode))
+;; Enable on-the-fly syntax checking
+(if (fboundp 'global-flycheck-mode)
+    (global-flycheck-mode +1)
+  (add-hook 'prog-mode-hook 'flycheck-mode))
 
-;; open jsx with web-mode
 (require 'flycheck)
-(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
-(defadvice web-mode-highlight-part (around tweak-jsx activate)
-  (if (equal web-mode-content-type "jsx")
-      (let ((web-mode-enable-part-face nil))
-        ad-do-it)
-    ad-do-it))
-
 ;; define checker
 (flycheck-define-checker jsxhint-checker
   "A JSX syntax and style checker based on JSXHint."

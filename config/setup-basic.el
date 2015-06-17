@@ -60,6 +60,10 @@
 	  (if this-win-2nd (other-window 1))))))
 (global-set-key (kbd "C-x |") 'toggle-window-split)
 
+(setq inhibit-startup-message t)   
+
 ;; old enough for y or no questions
  (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Lets you switch between windows with M-1, M-2, M-...
+(window-numbering-mode)
