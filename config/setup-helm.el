@@ -15,10 +15,8 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x C-x") 'helm-for-files)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
-(global-set-key (kbd "C-x h") 'helm-projectile)
-
-
-
+(global-set-key (kbd "C-x p") 'helm-projectile)
+(global-set-key (kbd "C-x g") 'helm-projectile-grep)
 
 (when (executable-find "curl")
   (setq helm-google-suggest-use-curl-p t))

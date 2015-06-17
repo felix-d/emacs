@@ -19,22 +19,10 @@
       save-place-file (concat user-emacs-directory "places")
       backup-directory-alist `(("." . ,(concat user-emacs-directory
 					       "backups"))))
-(defun pbpaste ()
-  (interactive)
-  (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
-(defun pbcopy ()
-  (interactive)
-  (call-process-region (point) (mark) "pbcopy")
-  (setq deactivate-mark t))
-(defun pbcut ()
-  (interactive)
-  (pbcopy)
-  (delete-region (region-beginning) (region-end)))
 
 ;; MAC LIKE BEHAVIOR
-(global-set-key (kbd "M-v") 'pbpaste)
-(global-set-key (kbd "M-c") 'pbcopy)
-(global-set-key (kbd "M-w") 'pbcut)
+(global-set-key (kbd "M-v") 'x-clipboard-yank)
+(global-set-key (kbd "M-w") 'yank)
 
 (defun toggle-window-split ()
   (interactive)
