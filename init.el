@@ -23,8 +23,7 @@
 ;; during startup
 (setq my-el-get-packages  
       (append  
-       '(auto-complete
-         evil
+       '(evil
          evil-leader
          evil-matchit
          evil-nerd-commenter
@@ -32,10 +31,10 @@
          evil-surround
          flycheck
          helm
-         smartparens
          window-numbering
          js2-mode
          key-chord
+         smartparens
          linum-relative
          pkg-info
          popup
@@ -61,19 +60,36 @@
 (load-file "~/.emacs.d/config/setup-yas.el")
 (load-file "~/.emacs.d/config/setup-helm.el")
 (load-file "~/.emacs.d/config/setup-js.el")
+;; (load-file "~/.emacs.d/config/setup-smartparens.el")
+(load-file "~/.emacs.d/config/setup-keybindings.el")
 (load-file "~/.emacs.d/config/setup-web.el")
-(load-file "~/.emacs.d/config/setup-smartparens.el")
 (load-file "~/.emacs.d/config/setup-flycheck.el")
 (load-file "~/.emacs.d/config/setup-company.el")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(js2-basic-offset 2))
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(js2-basic-offset 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(window-numbering-face ((t (:foreground "magenta" :weight ultra-bold :height 1.7 :width extra-expanded))) t))
+
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-markup-indent-offset 3)
+(setq web-mode-css-indent-offset 2)
+(setq js2-basic-offset 2)
+
+(require 'smartparens-config)
+(smartparens-global-mode)
+(sp-local-pair '(js2-mode web-mode) "{" nil :post-handlers '((my-create-newline-and-enter-sexp "RET")))
+
+(defun my-create-newline-and-enter-sexp (&rest _ignored)
+  "Open a new brace or bracket expression, with relevant newlines and indent. "
+  (newline)
+  (indent-according-to-mode)
+  (forward-line -1)
+  (indent-according-to-mode))
