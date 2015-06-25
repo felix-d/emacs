@@ -12,8 +12,8 @@
   (define-key term-raw-map (kbd "C-w C-k") 'windmove-up)
   (define-key term-raw-map (kbd "C-w k") 'windmove-up)
   (define-key term-raw-map (kbd "C-w c") 'delete-window)
-  (define-key term-raw-map (kbd "C-w v") 'split-window-vertically)
-  (define-key term-raw-map (kbd "C-w s") 'split-window-horizontally)
+  (define-key term-raw-map (kbd "C-w v") 'split-window-horizontally)
+  (define-key term-raw-map (kbd "C-w s") 'split-window-vertically)
   (define-key term-raw-map (kbd "C-d") 'bury-buffer))
 
 
