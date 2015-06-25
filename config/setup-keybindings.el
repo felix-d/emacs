@@ -1,1 +1,20 @@
 (global-set-key (kbd "<f1>") 'multi-term)
+
+(defun windmove-evil-keys ()
+  (define-key term-raw-map (kbd "C-w") nil)
+  (define-key term-raw-map (kbd "C-w =") 'balance-windows)
+  (define-key term-raw-map (kbd "C-w h") 'windmove-left)
+  (define-key term-raw-map (kbd "C-w C-h") 'windmove-left)
+  (define-key term-raw-map (kbd "C-w l") 'windmove-right)
+  (define-key term-raw-map (kbd "C-w C-l") 'windmove-right)
+  (define-key term-raw-map (kbd "C-w j") 'windmove-down)
+  (define-key term-raw-map (kbd "C-w C-j") 'windmove-down)
+  (define-key term-raw-map (kbd "C-w C-k") 'windmove-up)
+  (define-key term-raw-map (kbd "C-w k") 'windmove-up)
+  (define-key term-raw-map (kbd "C-w c") 'delete-window)
+  (define-key term-raw-map (kbd "C-w v") 'split-window-vertically)
+  (define-key term-raw-map (kbd "C-w s") 'split-window-horizontally)
+  (define-key term-raw-map (kbd "C-d") 'bury-buffer))
+
+
+(add-hook 'term-mode-hook 'windmove-evil-keys)

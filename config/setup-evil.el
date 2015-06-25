@@ -29,4 +29,9 @@
 ;; Evil nerd commenter default keys
 ;; M-; for lines
 (evilnc-default-hotkeys)
-(windmove-default-keybindings)
+
+;; Because we often hit C...
+(define-key evil-normal-state-map (kbd "C-w C-l") 'windmove-right)
+(define-key evil-normal-state-map (kbd "C-w C-h") 'windmove-left)
+(define-key evil-normal-state-map (kbd "C-w C-k") 'windmove-up)
+(define-key evil-normal-state-map (kbd "C-w C-j") 'windmove-down)

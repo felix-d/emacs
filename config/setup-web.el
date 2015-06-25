@@ -1,4 +1,25 @@
-;; Files to open in web mode
+;; Open .js file with js2-mode
+(add-to-list 'auto-mode-alist '("\\.js\\'"    . js2-mode))
+
+(add-to-list 'auto-mode-alist '("\\.json\\'"    . json-mode))
+(add-hook 'json-mode-hook
+          (lambda ()
+            (make-local-variable 'js-indent-level)
+            (setq js-indent-level 2)))
+
+;; open jsx with web-mode
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+(defadvice web-mode-highlight-part (around tweak-jsx activate)
+  (if (equal web-mode-content-type "jsx")
+      (let ((web-mode-enable-part-face nil))
+        ad-do-it)
+    ad-do-it))
+
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-markup-indent-offset 3)
+(setq web-mode-css-indent-offset 2)
+(setq js2-basic-offset 2)
+
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
@@ -7,12 +28,3 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-
-;; Web mode settings
-(setq web-mode-enable-auto-quoting nil)
-(setq web-mode-enable-auto-pairing nil) 
-
-;; Emmet mode met let you easily create HTML
-(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
-(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
-(add-hook 'web-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
