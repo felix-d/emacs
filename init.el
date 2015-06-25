@@ -93,3 +93,6 @@
   (indent-according-to-mode)
   (forward-line -1)
   (indent-according-to-mode))
+
+(rainbow-delimiters-mode)
+(global-set-key (kbd "<f1>") 'multi-term)
