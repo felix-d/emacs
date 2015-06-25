@@ -20,10 +20,6 @@
       backup-directory-alist `(("." . ,(concat user-emacs-directory
 					       "backups"))))
 
-;; MAC LIKE BEHAVIOR
-(global-set-key (kbd "M-v") 'x-clipboard-yank)
-(global-set-key (kbd "M-w") 'yank)
-
 (defun toggle-window-split ()
   (interactive)
   (if (= (count-windows) 2)
@@ -43,7 +39,7 @@
 	(delete-other-windows)
 	(let ((first-win (selected-window)))
 	  (funcall splitter)
-	  (if this-win-2nd (other-window 1))
+          (if this-win-2nd (other-window 1))
 	  (set-window-buffer (selected-window) this-win-buffer)
 	  (set-window-buffer (next-window) next-win-buffer)
 	  (select-window first-win)
@@ -54,6 +50,3 @@
 
 ;; old enough for y or no questions
  (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; Lets you switch between windows with M-1, M-2, M-...
-(window-numbering-mode)

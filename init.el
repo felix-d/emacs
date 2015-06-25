@@ -60,7 +60,6 @@
 (load-file "~/.emacs.d/config/setup-yas.el")
 (load-file "~/.emacs.d/config/setup-smartparens.el")
 (load-file "~/.emacs.d/config/setup-helm.el")
-(load-file "~/.emacs.d/config/setup-js.el")
 (load-file "~/.emacs.d/config/setup-keybindings.el")
 (load-file "~/.emacs.d/config/setup-web.el")
 (load-file "~/.emacs.d/config/setup-flycheck.el")
