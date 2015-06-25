@@ -3,9 +3,13 @@ auto-save-list/
 backups/
 el-get/
 projectile-bookmarks.eld
+projectile.cache
+npm-debug.log
+session.*
 *.elc
 *~
 #*
 *#
+.#*
 eshell/
 tramp
