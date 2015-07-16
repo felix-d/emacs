@@ -32,6 +32,7 @@
          flycheck
          helm
          json-mode
+         scss-mode
          js2-mode
          key-chord
          smartparens
@@ -39,7 +40,6 @@
          pkg-info
          popup
          projectile
-         tern
          virtualenvwrapper
          company-mode
          web-mode
@@ -65,13 +65,14 @@
 (load-file "~/.emacs.d/config/setup-flycheck.el")
 (load-file "~/.emacs.d/config/setup-company.el")
 
-
-(defun my-create-newline-and-enter-sexp (&rest _ignored)
-  "Open a new brace or bracket expression, with relevant newlines and indent. "
-  (newline)
-  (indent-according-to-mode)
-  (forward-line -1)
-  (indent-according-to-mode))
-
-(rainbow-delimiters-mode)
 (global-set-key (kbd "<f1>") 'multi-term)
+(global-auto-revert-mode)
+
+(add-to-list 'grep-find-ignored-directories "dist")
+(add-to-list 'grep-find-ignored-directories "node_modules")
+(package-initialize)
+(elpy-enable)
+
+(add-hook 'css-mode-hook
+          (lambda()
+            (setq css-indent-offset 2)))
