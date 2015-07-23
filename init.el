@@ -3,6 +3,17 @@
 ;;; The starting configuration file for my Emacs config
 ;;; Code:
 
+;;;For mac
+(defun set-exec-path-from-shell-PATH ()
+  "Set up Emacs' `exec-path' and PATH environment variable to match that used by the user's shell.
+
+This is particularly useful under Mac OSX, where GUI apps are not started from a shell."
+  (interactive)
+  (let ((path-from-shell (replace-regexp-in-string "[ \t\n]*$" "" (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+(set-exec-path-from-shell-PATH)
+
 ;; We add el-get to load path
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (unless (require 'el-get nil 'noerror)
@@ -71,10 +82,19 @@
 (add-to-list 'grep-find-ignored-directories "dist")
 (add-to-list 'grep-find-ignored-directories "node_modules")
 (package-initialize)
-(elpy-enable)
+;;(elpy-enable)
 
 (add-hook 'css-mode-hook
           (lambda()
             (setq css-indent-offset 2)))
 
 (server-start)
+ (setq mac-option-modifier 'super)
+ (setq mac-command-modifier 'meta)
+;;Replace all freakin' ^M chars in the current buffer
+(fset 'replace-ctrlms
+   [escape ?< escape ?% ?\C-q ?\C-m return ?\C-q ?\C-j return ?!])
+(global-set-key "\C-cm" 'replace-ctrlms)
+(linum-mode)
+;; Use Emacs terminfo, not system terminfo
+(setq system-uses-terminfo nil)
