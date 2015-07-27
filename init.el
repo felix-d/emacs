@@ -98,3 +98,5 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 (linum-mode)
 ;; Use Emacs terminfo, not system terminfo
 (setq system-uses-terminfo nil)
+
+(setq multi-term-program "/bin/zsh")
