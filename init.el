@@ -79,8 +79,9 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 (global-set-key (kbd "<f1>") 'multi-term)
 (global-auto-revert-mode)
 
-(add-to-list 'grep-find-ignored-directories "dist")
-(add-to-list 'grep-find-ignored-directories "node_modules")
+;; (defvar grep-find-ignored-directories)
+;; (add-to-list 'grep-find-ignored-directories "dist")
+;; (add-to-list 'grep-find-ignored-directories "node_modules")
 (package-initialize)
 ;;(elpy-enable)
 
@@ -88,7 +89,6 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
           (lambda()
             (setq css-indent-offset 2)))
 
-(server-start)
  (setq mac-option-modifier 'super)
  (setq mac-command-modifier 'meta)
 ;;Replace all freakin' ^M chars in the current buffer
@@ -100,3 +100,17 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 (setq system-uses-terminfo nil)
 
 (setq multi-term-program "/bin/zsh")
+
+(setq tramp-default-method "ssh")
+(setq tramp-auto-save-directory "~/.emacs.d/tramp-autosave")
+
+(set 'js2-indent-switch-body t)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(grep-find-ignored-directories
+   (quote
+    ("CVS" ".svn" "{arch}" ".hg" "_darcs" ".git" ".bzr" "node_modules" "dist"))))

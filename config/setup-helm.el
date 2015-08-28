@@ -20,3 +20,6 @@
 
 (when (executable-find "curl")
   (setq helm-google-suggest-use-curl-p t))
+
+(add-to-list 'projectile-globally-ignored-directories "dist")
+(add-to-list 'projectile-globally-ignored-directories "node_modules")
