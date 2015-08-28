@@ -1,0 +1,128 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/fdescoteaux/" . "react_parse/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/stores/__tests__/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/resources/locales/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/stores/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/utils/"
+ "/Users/fdescoteaux/Documents/eventshopper/dist/resources/locales/"
+ "/usr/share/emacs/22.1/lisp/progmodes/"
+ "/Users/fdescoteaux/.emacs.d/"
+ "/Users/fdescoteaux/"
+ "/Users/fdescoteaux/Documents/eventshopper/eslint-plugin-eventshopper-custom-rules/rules/"
+ "/Users/fdescoteaux/Documents/eventshopper/eslint-plugin-eventshopper-custom-rules/"
+ "/Users/fdescoteaux/Documents/eventshopper/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/actions/"
+ "/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/test_project/"
+ "/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/"
+ "/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/"
+ "/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/test_project/excludeddir/"
+ "/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/test_project/innerdir/"
+ "/Users/fdescoteaux/Documents/eventshopper-v3/tracking/"
+ "/Users/fdescoteaux/Documents/eventshopper-v3/"
+ "/Users/fdescoteaux/Documents/eventshopper-v3/build/"
+ "/Users/fdescoteaux/Documents/eventshopper-v3/build/js/"
+ "/Users/fdescoteaux/parse_circular_dependencies/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/"
+ "/Users/fdescoteaux/Documents/eventshopper/jenkins/"
+ "/Users/fdescoteaux/react_parse/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/picktickets/layouts/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/picktickets/components/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/waitingroom/layouts/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/user/constants/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/user/actions/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/user/stores/"
+ "/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/order/actions/"
+ "/Users/fdescoteaux/Documents/browserify_tests/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ 
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/stores/__tests__/" (21963 33634 0 0) "TimerStore.test.js" "schema_test.json" "RouterStore.test.js" "PageLayoutStore.test.js" "ModalManagerStore.test.js" "IntlStore.test.js" "InputStore.test.js" "FormStore.test.js" "ExperimentsStore.test.js" "ConfigStore.test.js" ".#schema_test.json" "#schema_test.json#" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/resources/locales/" (21963 22301 0 0) "fr.json" "fr-FR.json" "fr-CA.json" "en.json" "en-US.json" "en-CA.json" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/stores/" (21963 28546 0 0) "TrackersStore.js" "TimerStore.js" "SourceStore.js" "RouterStore.js" "PageLayoutStore.js" "ModalManagerStore.js" "IntlStore.js" "InputStore.js" "FormStore.js" "ExperimentsStore.js" "ConfigStore.js" "__tests__/" "#FormStore.js#" "#ConfigStore.js#" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/utils/" (21963 26144 0 0) "WebApi.js" "truncate.js" "TrackingApi.js" "Tools.js" "SourceApi.js" "RouterPages.js" "RouterContainer.js" "OrderApi.jsx" "MockApi.js" "IntlWrapper.js" "IntlApi.js" "FormValidationTools.js" "FormValidation.js" "debug.js" "dateParser.js" "creditCard.js" "ConvictSetup.js" "ConvertData.js" "ConfigApi.js" "BackendApi_superagent-legacyIESupport.js" "BackendApi.js" "__tests__/" ".IntlWrapper.js.swp" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/dist/resources/locales/" (21963 22283 0 0) "fr.json" "fr-FR.json" "fr-CA.json" "flycheck_fr.json" "en.json" "en-US.json" "en-CA.json" "../" "./")
+
+ ("/usr/share/emacs/22.1/lisp/progmodes/" (21392 50409 0 0) "xscheme.elc" "xscheme.el.gz" "which-func.elc" "which-func.el.gz" "vhdl-mode.elc" "vhdl-mode.el.gz" "tcl.elc" "tcl.el.gz" "sql.elc" "sql.el.gz" "simula.elc" "simula.el.gz" "sh-script.elc" "sh-script.el.gz" "scheme.elc" "scheme.el.gz" "python.elc" "python.el.gz" "ps-mode.elc" "ps-mode.el.gz" "prolog.elc" "prolog.el.gz" "perl-mode.elc" "perl-mode.el.gz" "pascal.elc" "pascal.el.gz" "octave-mod.elc" "octave-mod.el.gz" "octave-inf.elc" "octave-inf.el.gz" "octave-hlp.elc" "octave-hlp.el.gz" "modula2.elc" "modula2.el.gz" "mixal-mode.elc" "mixal-mode.el.gz" "meta-mode.elc" "meta-mode.el.gz" "mantemp.elc" "mantemp.el.gz" "make-mode.elc" "make-mode.el.gz" "m4-mode.elc" "m4-mode.el.gz" "ld-script.elc" "ld-script.el.gz" "inf-lisp.elc" "inf-lisp.el.gz" "idlwave.elc" "idlwave.el.gz" "idlw-toolbar.elc" "idlw-toolbar.el.gz" "idlw-shell.elc" "idlw-shell.el.gz" "idlw-help.elc" "idlw-help.el.gz" "idlw-complete-structtag.elc" "idlw-complete-structtag.el.gz" "icon.elc" "icon.el.gz" "hideshow.elc" "hideshow.el.gz" "hideif.elc" "hideif.el.gz" "gud.elc" "gud.el.gz" "grep.elc" "grep.el.gz" "glasses.elc" "glasses.el.gz" "gdb-ui.elc" "gdb-ui.el.gz" "fortran.elc" "fortran.el.gz" "flymake.elc" "flymake.el.gz" "f90.elc" "f90.el.gz" "executable.elc" "executable.el.gz" "etags.elc" "etags.el.gz" "ebrowse.elc" "ebrowse.el.gz" "ebnf2ps.elc" "ebnf2ps.el.gz" "ebnf-yac.elc" "ebnf-yac.el.gz" "ebnf-otz.elc" "ebnf-otz.el.gz" "ebnf-iso.elc" "ebnf-iso.el.gz" "ebnf-ebx.elc" "ebnf-ebx.el.gz" "ebnf-dtd.elc" "ebnf-dtd.el.gz" "ebnf-bnf.elc" "ebnf-bnf.el.gz" "ebnf-abn.elc" "ebnf-abn.el.gz" "delphi.elc" "delphi.el.gz" "dcl-mode.elc" "dcl-mode.el.gz" "cwarn.elc" "cwarn.el.gz" "cpp.elc" "cpp.el.gz" "cperl-mode.elc" "cperl-mode.el.gz" "compile.elc" "compile.el.gz" "cmacexp.elc" "cmacexp.el.gz" "cfengine.elc" "cfengine.el.gz" "cc-vars.elc" "cc-vars.el.gz" "cc-subword.elc" "cc-subword.el.gz" "cc-styles.elc" "cc-styles.el.gz" "cc-mode.elc" "cc-mode.el.gz" "cc-menus.elc" "cc-menus.el.gz" "cc-langs.elc" "cc-langs.el.gz" "cc-fonts.elc" "cc-fonts.el.gz" "cc-engine.elc" "cc-engine.el.gz" "cc-defs.elc" "cc-defs.el.gz" "cc-compat.elc" "cc-compat.el.gz" "cc-cmds.elc" "cc-cmds.el.gz" "cc-bytecomp.elc" "cc-bytecomp.el.gz" "cc-awk.elc" "cc-awk.el.gz" "cc-align.elc" "cc-align.el.gz" "autoconf.elc" "autoconf.el.gz" "asm-mode.elc" "asm-mode.el.gz" "antlr-mode.elc" "antlr-mode.el.gz" "ada-xref.elc" "ada-xref.el.gz" "ada-stmt.elc" "ada-stmt.el.gz" "ada-prj.elc" "ada-prj.el.gz" "ada-mode.elc" "ada-mode.el.gz" "../" "./")
+
+ ("/Users/fdescoteaux/.emacs.d/" (21963 19824 0 0) "tramp-autosave/" "tramp" "themes/" "snippets/" "recentf" "README.md" "projectile.cache" "projectile-bookmarks.eld" "init.el" "ido.last" "el-get/" "config/" "backups/" "auto-save-list/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/fdescoteaux/" (21960 64743 0 0) "tracking.md" "react_parse/" "Public/" "pip.py" "Pictures/" "parse_circular_dependencies/" "npm-debug.log" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Outbox’s MacBook Pro-5.0.2" ".viminfo" ".vim/" ".v8flags.3.28.71.19.fdescoteaux.json" ".v8flags.3.14.5.9.fdescoteaux.json" ".Trash/" ".terminfo/" ".ssh/" ".pip.py.swp" ".oh-my-zsh/" ".nvm/" ".npm/" ".node-gyp/" ".htoprc" ".gitconfig" ".gem/" ".esets/" ".emacs.d/" ".DS_Store" ".CFUserTextEncoding" ".bash_history" ".adobe/" ".#tracking.md" "#tracking.md#" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eslint-plugin-eventshopper-custom-rules/rules/" (21960 64659 0 0) "custom-indent.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eslint-plugin-eventshopper-custom-rules/" (21960 64653 0 0) "rules/" "package.json" "index.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/" (21960 64591 0 0) "test/" "README_screenshot-in-editor-linting.png" "README.md" "package.json" "npm-shrinkwrap.json" "node_modules/" "jenkins/" "Gulpfile.js" "eventshopper/" "eslint-plugin-eventshopper-custom-rules/" "CONTRIBUTING.md" "buildbot.conf" "build/" ".nvmrc" ".jscsrc" ".gitignore" ".git/" ".eslintrc" ".eslintignore" ".editorconfig" ".DS_Store" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/actions/" (21956 47912 0 0) "UserActions.js" "TrackingActions.js" "TimerActions.js" "RouterActions.js" "PageLayoutActions.js" "ModalManagerActions.js" "IntlActions.js" "InputActions.js" "FormActions.js" "ExperimentsActions.js" "__tests__/" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/test_project/" (21960 55875 0 0) "innerdir/" "excludedfile.js" "excludeddir/" "C.js" "B.jsx" "A.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/" (21960 55719 0 0) "venv/" "tests.py" "tests/" "parser.pyc" "parser.py" "parse_circular_dependencies.req" "moduleparser.pyc" "moduleparser.py" "module.pyc" "module.py" "main.py" "app.pyc" "app.py" "__init__.pyc" "__init__.py" ".Python" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/" (21960 45962 0 0) "tests.py" "test_project/" "__init__.py" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/test_project/excludeddir/" (21960 45535 0 0) "flycheck_excludedfile.js" "excludedfile.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/jenkins/parse_circular_dependencies/tests/test_project/innerdir/" (21960 45182 0 0) "D.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper-v3/tracking/" (21956 52148 0 0) "js/" "index.html" ".DS_Store" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper-v3/" (21956 50318 0 0) "WS.as" "wroomMasterMulti.as" "wroomMaster.as" "WebConn.as" "userForm.as" "UILayout/" "Tracking.as" "tracking/" "Tools.as" "TicketTimer.as" "RegExp.as" "PopupManager.as" "PL_SS.as" "npm-debug.log" "NHL-Logos.fla" "MLS-Logos.fla" "Library.as" "JSON.as" "hashFunc.as" "GLOB.as" "fever/" "eventShopperV3.fla" "eventShopperLite.fla" "eventShopperLite.as" "Eval.as" "ESv3_DEV.fla" "ES.as" "dynVenue.fla" "dynVenue.as" "Draw.as" "DispLite.as" "Disp.as" "DICT.as" "countryRegionList.as" "CONF.as" "component/" "com/" "buildbot.conf" "build/" ".gitignore" ".git/" ".DS_Store" "#Disp.as#" "!BugFixTracking.txt" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper-v3/build/" (21956 50446 0 0) "skins/" "js/" "eventShopperV3_Scene 1.swf" "eventShopperV3.swf" "eventShopperV3.swd" "eventShopperV3.html" "eventShopperDTM.html" "css/" ".DS_Store" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper-v3/build/js/" (21956 50436 0 0) "OBXTracking.js" "fbpopup.js" "dtm.js" "common_functions.js" "#dtm.js#" "../" "./")
+
+ ("/Users/fdescoteaux/parse_circular_dependencies/" (21956 47862 0 0) "venv/" "parser.pyc" "parser.py" "moduleparser.pyc" "moduleparser.py" "module.pyc" "module.py" "main.py" "app.pyc" "app.py" ".Python" ".git/" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/" (21955 51090 0 0) "waitingroom/" "verifypurchase/" "user/" "stockpile/" "signup/" "routes.jsx" "revieworder/" "picktickets/" "paymentinformation/" "order/" "layouts.js" "index.jsx" "example/" "confirmation/" "common/" ".#routes.jsx" ".#index.jsx" "#routes.jsx#" "#index.jsx#" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/jenkins/" (21954 33845 0 0) "setup-jasmine-reporter.js" "parse_circular_dependencies/" "junit_output/" "coverage_output/" "checkstyle_output/" "build_pkg.sh" "build.sh" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/picktickets/layouts/" (21953 481 0 0) "ticketsearchpage/" "index.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/picktickets/components/" (21953 3959 0 0) "VenueMapModule.jsx" "TicketSearchPage.jsx" "SelectedEventModule.jsx" "registry.js" "PriceTableEntry.jsx" "PriceTable.jsx" "PriceRange.jsx" "PriceLevelTooltip.jsx" "PriceLevelDetailsItem.jsx" "PriceLevelDetails.jsx" "PickPriceLevelModule.jsx" "PickNumberOfTicketsModule.jsx" "PickNumberOfInvitesModule.jsx" "PickEventModule.jsx" "PickEventLargeModule.jsx" "InvitesDescription.jsx" "InvalidAccessCode.jsx" "GeneralAdmissionMessage.jsx" "FindBestPriceTableEntry.jsx" "EventSummary.jsx" "EventSelectorScrollPane.jsx" "EventSelectorCalendar.jsx" "EventSelector.jsx" "EventDate.jsx" "AcceptSplitSeats.jsx" "__tests__/" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/" (21951 52859 0 0) "trackin_email.rtf" "soumission_email.rtf" "eventshopper-v3/" "eventshopper/" "browserify_tests/" "bfox/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/" (21951 29753 0 0) "resources/" "js/" "index.html" "img/" "fonts/" "css/" ".placeholder" ".DS_Store" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/" (21938 19587 0 0) "utils/" "tracking/" "stores/" "polyfills/" "mixins/" "flux/" "experiments/" "envConfig/" "constants/" "config/" "components/" "actions/" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/common/experiments/" (21953 4630 0 0) "OptimizelyExperiment.js" "OptimizelyApi.js" "index.js" "ExperimentEventFactory.js" "ExperimentEvent.js" "Experiment.js" "asyncActions.js" "__tests__/" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/waitingroom/layouts/" (21953 5 0 0) "waitingroompage/" "index.js" "../" "./")
+
+ ("/Users/fdescoteaux/react_parse/" (21952 55203 0 0) "styles.css" "script.js" "reactproject.py" "parsing.py" "parse.py" "package.json" "nodeparsers.py" "index.html" "gulpfile.js" "force.csv" "dist/" "d3.min.js" "constants.py" "app.json" ".gitignore" ".git/" "#app.json#" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/user/constants/" (21952 53348 0 0) "UserSessionConstants.js" "UsersChoicesConstants.js" "flycheck_CookieConstants.js" "CookieConstants.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/user/actions/" (21952 53324 0 0) "UserSessionActions.js" "UsersChoicesActions.js" "CookieActions.js" "__tests__/" ".#CookieActions.js" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/user/stores/" (21952 53292 0 0) "UserSessionStore.js" "UserServerRecordStore.js" "UsersChoicesStore.js" "flycheck_CookieStore.js" "CookieStore.js" "__tests__/" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/eventshopper/eventshopper/js/order/actions/" (21952 50259 0 0) "ProcessOrderActions.js" "CartActions.js" "__tests__/" "../" "./")
+
+ ("/Users/fdescoteaux/Documents/browserify_tests/" (21951 53368 0 0) "test3.js" "test2.js" "test.js" "index.js" "index.html" "bundle.js" ".DS_Store" ".#test2.js" "#test2.js#" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
